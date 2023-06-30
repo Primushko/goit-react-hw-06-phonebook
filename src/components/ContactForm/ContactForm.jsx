@@ -54,7 +54,6 @@ export const ContactForm = () => {
           required
         />
       </Label>
-
       <SubmitButton type="submit">Add contact</SubmitButton>
     </Form>
   );
