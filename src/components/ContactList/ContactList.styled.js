@@ -1,36 +1,32 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  padding-left: 30px;
+  padding-left: 0px;
 `;
 
 export const Item = styled.li`
-  padding-left: 5px;
-  font-size: 17px;
-
-  &:not(:last-child) {
-    margin-bottom: 15px;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 `;
 
 export const Text = styled.p`
   display: inline-block;
   min-width: 230px;
+  font-size: 20px;
 `;
 
 export const Button = styled.button`
   width: 70px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-left: 10px;
-  border: 1px solid #c4c4c4;
-  border-radius: 4px;
   cursor: pointer;
-  background-color: transparent;
   transition: background-color 0.5s ease;
+  background-color: transparent;
+
+  border: 2px solid rgb(154, 141, 238);
+  border-radius: 50%;
 
   &:hover,
   &:focus {
-    background-color: #c4c4c4;
+    background-color: rgb(154, 141, 238);
   }
 `;
